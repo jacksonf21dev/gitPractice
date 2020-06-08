@@ -17,9 +17,9 @@
                 <p>Choose how much of a tip to give.</p>
                 <select name="tip" id="selectRate">
                     <option value="" disabled selected>-- Select the tip rate --</option>
-                    <option>15%</option>
-                    <option>20%</option>
-                    <option>25%</option>
+                    <option value=".15">15%</option>
+                    <option value=".2">20%</option>
+                    <option value=".25">25%</option>
                 </select>
             </div>
             <div class="people">
@@ -29,15 +29,15 @@
             <div class="calculate">
                 <button type="button" id="calc-btn">Calculate!</button>
             </div>
-            <div class="output">
-              <div class="tipDisplay">
-                  <label>$ </label><span id="finalTip">0.00</span>
-              </div>
-              <div class="totalDisplay">
-                  <label>$ </label><span id="finalTotal">0.00</span><small id="each"> each</small>
-              </div>
+            <div class="tipDisplay">
+                <label>$ </label><span id="finalTip">0.00</span>
+            </div>
+            <div class="totalDisplay">
+                <label>$ </label><span id="finalTotal">0.00</span><small id="each"> each</small>
             </div>
         </form>
 
     </div>
-</body>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
