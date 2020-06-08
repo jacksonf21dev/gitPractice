@@ -6,18 +6,17 @@
 <body>
     <div class="appBox">
         <div class="app-header">
-            <h3>Tip Calculator</h3>
+            <p>Tip Calculator</p>
         </div>
         <form>
             <div class="initialCost">
                 <p>What was the cost of the meal?</p>
-                <label>$ </label><input type ="text" id="costInput">
+                <label>$ </label><input type ="text" id="costInput" placeholder="Enter price">
             </div>
-            <br>
             <div class="rateOfTip">
                 <p>Choose how much of a tip to give.</p>
                 <select name="tip" id="selectRate">
-                    <option value="" disabled selected>Select the tip rate.</option>
+                    <option value="" disabled selected>-- Select the tip rate --</option>
                     <option>15%</option>
                     <option>20%</option>
                     <option>25%</option>
@@ -25,17 +24,18 @@
             </div>
             <div class="people">
                 <p>How many people are splitting the bill?</p>
-                <input type="text" id="peopleInput">
+                <input type="text" id="peopleInput" placeholder="Number of people"><label id="person"> people</label>
             </div>
-            <br>
             <div class="calculate">
-                <button type="button">Calculate!</button>
+                <button type="button" id="calc-btn">Calculate!</button>
             </div>
-            <div class="tipDisplay">
-                <label>$ </label><span class="finalTip">0.00</span>
-            </div>
-            <div class="totalDisplay">
-                <label>$ </label><span class="finalTotal">0.00</span>
+            <div class="output">
+              <div class="tipDisplay">
+                  <label>$ </label><span id="finalTip">0.00</span>
+              </div>
+              <div class="totalDisplay">
+                  <label>$ </label><span id="finalTotal">0.00</span><small id="each"> each</small>
+              </div>
             </div>
         </form>
 
