@@ -1,5 +1,5 @@
 body, html {
-  background-color: deepskyblue;
+  background-image: linear-gradient(rgb(106, 7, 172), rgb(0, 0, 0));
   margin: 0;
   font-family: Helvetica, Arial, sans-serif;
   font-size: large;
@@ -10,11 +10,13 @@ body, html {
   background-color: white;
   margin: 100px auto;
   box-sizing: border-box;
-  width: 30%;
+  width: 28%;
+  min-width: 250px;
   min-height: 200px;
   height: 430px;
   border-radius: 20px;
-  overflow-y: scroll;
+  overflow-y: auto;
+  overflow-x: scroll;
   position: relative;
 }
 
@@ -32,48 +34,54 @@ body, html {
 .initialCost {
   font-size: smaller;
   padding: 5px;
-  margin-left: 20px;
+  margin-left: 10px;
 }
+
+.inlineShift {
+  margin-left: 25px;
+}
+
 
 #costInput {
   width: 60%;
   padding: 5px 5px 8px 8px;
   border: 1px solid black;
-}
+ }
 
 .rateOfTip {
   padding: 5px;
-  margin-left: 30px;
+  text-align: center;
 }
 
 #selectRate {
   width: 80%;
+  min-width: 200px;
   padding: 12px 8px 12px 8px;
   font-size: 20px;
 }
 
 .people {
   font-size: smaller;
-  margin-left: 20px;
+  margin-left: 15px;
 }
 
 #peopleInput {
   width: 60%;
   padding: 5px 5px 8px 8px;
   border: 1px solid black;
+  margin-left: 10px;
 }
 
 .calculate {
-  margin-left: 30px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px;
+  display: block;
+  text-align: center;
 }
 
 #calc-btn {
   width: 80%;
   padding: 15px 8px 15px 8px;
   text-transform: uppercase;
-  margin: 5px 0 0 15px;
   border-radius: 5px;
   font-size: large;
 }
@@ -89,7 +97,9 @@ body, html {
   font-size: 30px;
 }
 
-
+.text-pad {
+  padding: 10px;
+}
 
 .tipDisplay:before {
   content: "Tip amount";
@@ -112,12 +122,23 @@ body, html {
   text-transform: uppercase;
 }
 
+.dividedDisplay {
+  margin: 10px;
+  font-size: 30px;
+}
+
+.dividedDisplay:before {
+  content: "Divided Tip";
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+  text-transform: uppercase;
+}
+
 .totalDisplay small {
   display: block;
 }
 
-
-
-#each {
+.each {
   display: inline;
 }
