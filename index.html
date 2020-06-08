@@ -3,5 +3,40 @@
 
 </head>
 <body>
-    <p> 2 + 2 = 4</p>
+    <div class="appBox">
+        <div class="app-header">
+            <h3>Tip Calculator</h3>
+        </div>
+        <form>
+            <div class="initialCost">
+                <p>What was the cost of the meal?</p>
+                <label>$ </label><input type ="text" id="costInput">
+            </div>
+            <br>
+            <div class="rateOfTip">
+                <select name="tip" id="selectRate">
+                    <option value="" disabled selected>Select the tip rate.</option>
+                    <option>15%</option>
+                    <option>20%</option>
+                    <option>25%</option>
+                </select>
+            </div>
+            <div class="people">
+                <p>How many people are splitting the bill?</p>
+                <input type="text" id="peopleInput">
+            </div>
+            <br>
+            <div class="calculate">
+                <p>Choose how much of a tip to give.</p>
+                <button type="button">Calculate!</button>
+            </div>
+            <div class="tipDisplay">
+                <label>$ </label><span class="finalTip">0.00</span>
+            </div>
+            <div class="totalDisplay">
+                <label>$ </label><span class="finalTotal">0.00</span>
+            </div>
+        </form>
+
+    </div>
 </body>
